@@ -21,11 +21,11 @@
 <body>
 
      <!-- PRE LOADER -->
-     <section class="preloader">
+     {{-- <section class="preloader">
           <div class="spinner">
                <span class="spinner-rotate"></span>
           </div>
-     </section>
+     </section> --}}
 
 
      <!-- MENU -->
@@ -40,7 +40,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand">Hydro</a>
+                    <a class="navbar-brand logo-navbar" href="#">Unipro</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -54,11 +54,23 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                         <li class="section-btn"><a href="#" data-toggle="modal" data-target="#modal-form">Sign in</a></li>
-                         <li class="section-btn"><a href="#" data-toggle="modal" data-target="#modal-form"> Join</a></li>
+                        
+                         
+                         <li>
+                              @if (Route::has('login'))
+                              
+                             @auth
+                                 <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                             @else
+                              <li class="section-btn"> <a href="{{ route('login') }}" >Log in</a></li>  
+         
+                                 @if (Route::has('register'))
+                                <li class="section-btn">   <a href="{{ route('register') }}" >Register</a> </li>  
+                                 @endif
+                             @endauth
+                         
+                            @endif
+                    </li>
                     </ul>
                </div>
 
@@ -75,7 +87,7 @@
                     <div class="col-md-6 col-sm-12">
                          <div class="home-info">
                               <h1>We make beautiful websites for all people.</h1>
-                              <a href="#about" class="btn section-btn smoothScroll">Start a project</a>
+                              <a href="{{route('register')}}" class="btn section-btn smoothScroll">Start a project</a>
                               <span>
                                    CALL US (+66) 010-020-0340
                                    <small>For any inquiry</small>
