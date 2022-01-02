@@ -164,7 +164,7 @@ http://www.templatemo.com/tm-509-hydro
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background: none repeat scroll 0 0 #ffffff;
+    background: none repeat scroll 0 0 #42edf3;
   }
 
   .spinner {
@@ -211,7 +211,7 @@ http://www.templatemo.com/tm-509-hydro
   .custom-navbar .navbar-brand {
     color: #ffffff;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -1px;
   }
 
@@ -220,14 +220,16 @@ http://www.templatemo.com/tm-509-hydro
   }
 
   .custom-navbar .navbar-nav.navbar-nav-first {
-    margin-left: 8em;
+    margin-left: 6em;
   }
-
+ 
   .custom-navbar .navbar-nav.navbar-right li a {
     padding-right: 12px;
     padding-left: 12px;
-  }
+    
 
+  }
+ 
   .custom-navbar .section-btn {
     padding: 15px;
     margin-left: 2em;
@@ -242,17 +244,19 @@ http://www.templatemo.com/tm-509-hydro
   .custom-navbar .section-btn a {
     padding: 0;
   }
-
+  .logo-navbar{
+    font-family: 'Luxurious Roman', cursive;
+  }
   .custom-navbar .nav .section-btn a:hover {
     color: #ffffff;
   }
 
   .custom-navbar .nav li a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #ffffff;
-    letter-spacing: -0.5px;
-    padding-right: 22px;
+    letter-spacing: 1px;
+    padding-right: 40px;
     padding-left: 22px;
   }
 
@@ -260,7 +264,7 @@ http://www.templatemo.com/tm-509-hydro
     background: transparent;
     color: #ce3232;
   }
-
+  
   .custom-navbar .navbar-nav > li > a:hover,
   .custom-navbar .navbar-nav > li > a:focus {
     background-color: transparent;
@@ -270,6 +274,7 @@ http://www.templatemo.com/tm-509-hydro
     background-color: transparent;
     color: #ce3232;
   }
+  
 
   .custom-navbar .navbar-toggle {
     border: none;
